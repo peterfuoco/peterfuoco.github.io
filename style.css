@@ -1,8 +1,129 @@
-.heading {
+
+
+.heading h1 {
     text-align: center;
     margin: auto 0;
+    /* background-color: blue; */
+    color: darkgoldenrod;
+    font-family: 'Literata', serif;
+    font-size: 100px;
+
 }
+
+/* * {
+    box-sizing: border-box;
+  } */
+
 
 .beerCity button {
     float: left;
+    font-family: 'Literata', serif;
 }
+
+iframe {
+   width: 50%;
+   height: 50%;
+   border: 0;
+   border-style: border 0;
+   float: center;
+   /* margin: 0 auto; */
+
+}
+
+
+
+.container {
+    /* float: center;
+    background:rgba(255,255,255,0.7);
+    text-align: center; */
+    height:50%;
+    font-family: 'Literata', serif;
+    color:darkgoldenrod;
+    border-color: white;
+    display: flex;
+    padding-top: 20px;
+
+}
+
+ .brewTour {
+    height:50%;
+    width: 48%;
+    display:flex;
+} 
+
+.brewTourHeader h1 {
+    /* color:darkgoldenrod; */
+    border-color: white;
+    border-bottom: #ffffff;
+    text-align: center;
+    color:darkgoldenrod;
+    margin-top: 0px;
+}
+
+
+.breweryResults {
+    /* display:flex; */
+    width:50%;
+    height: 500px;
+    flex-wrap: wrap;
+    background:rgba(255,255,255,0.7);
+    overflow: scroll;
+}
+
+body {
+    background: #ffffff url("/Users/peterfuoco/Downloads/Beer.jpg") no-repeat right top;
+    font-family: 'Literata', serif;
+
+}
+
+/* .brewTour {
+    float: center;
+    width: 100%;
+    text-align:center;
+    padding-top: 20px;
+
+} */
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  font-family: 'Literata', serif;
+  color:darkgoldenrod;
+  border-color: white;
+
+}
+
+.button2 {
+    padding: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:10px
+    /* border-radius: 10px; */
+}
+
+
+.boozyInfo {
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:10px
+}
+
+
+
+/* input {
+    width: 200px;
+    height: 50px;
+} */
+
+/* add @media min pixels */
