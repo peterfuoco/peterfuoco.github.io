@@ -1,19 +1,16 @@
-
+/* Added Google Font */
+@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
 
 .heading h1 {
     text-align: center;
     margin: auto 0;
-    /* background-color: blue; */
     color: darkgoldenrod;
     font-family: 'Literata', serif;
     font-size: 100px;
+    width: 100%;
+    height: 100%;
 
 }
-
-/* * {
-    box-sizing: border-box;
-  } */
-
 
 .beerCity button {
     float: left;
@@ -26,44 +23,39 @@ iframe {
    border: 0;
    border-style: border 0;
    float: center;
-   /* margin: 0 auto; */
-
 }
 
 #linkText {
     color:darkgoldenrod;
 }
+
 #datX {
     float: left;
     height: 20px;
     cursor: pointer;
     position: relative;
-    left: 200px;
+    left: 150px;
 }
 
 #individualBreweryText {
     text-align:center;
 }
 
-
-
 .container {
-    /* float: center;
-    background:rgba(255,255,255,0.7);
-    text-align: center; */
-    height:50%;
+    height:100%;
     font-family: 'Literata', serif;
     color:darkgoldenrod;
     border-color: white;
     display: flex;
     padding-top: 20px;
-
+    padding-right: 8%;
 }
 
  .brewTour {
     height:50%;
     width: 48%;
     display:flex;
+    padding-left: 10%;
 } 
 
 .listBackgrounds {
@@ -72,19 +64,19 @@ iframe {
 }
 
 .brewTourHeader h1 {
-    /* color:darkgoldenrod; */
     border-color: white;
     border-bottom: #ffffff;
     text-align: center;
     color:darkgoldenrod;
     margin-top: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 
 .breweryResults {
-    /* display:flex; */
     width:50%;
-    height: 500px;
+    height: 100%;
     flex-wrap: wrap;
     overflow: scroll;
     background: rgba(58, 46, 8, 0.767) url("/Users/peterfuoco/Downloads/Bubbles.gif") right top;
@@ -92,7 +84,7 @@ iframe {
 }
 
 body {
-    background: #ffffff url("/Users/peterfuoco/Downloads/Beer.jpg") no-repeat right top;
+    background: #ffffff url("/Users/peterfuoco/Downloads/Beer.jpg") right top;
     font-family: 'Literata', serif;
 
 }
@@ -128,12 +120,9 @@ body {
 }
 
 .button2 {
-    /* padding: 10px; */
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     margin:10px;
-    /* border-radius: 10px; */
-    /* // background color */
     cursor: pointer;
 }
 
@@ -148,8 +137,6 @@ body {
     
 }
 
-
-
 input {
     width: 200px;
     height: 40px;
@@ -161,3 +148,32 @@ input {
 }
 
 /* add @media min pixels */
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .heading {
+        width: 100%;
+        height: 40vh;
+        border: 1px solid red;
+    }
+    .brewTourHeader {
+        width: 100%;
+        height: 10vh;
+        border: 1px solid blue;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        border: 1px solid green;
+    }
+
+}
+
+
+/* @media (max-width: 1040) { */

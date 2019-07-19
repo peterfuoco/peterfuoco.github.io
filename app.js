@@ -42,7 +42,7 @@ $(() => {
                 minedData.name + ' is a '+ minedData.brewery_type + ' brewery in ' + minedData.city + ', ' + minedData.state + 
                 '.').attr('id','individualBreweryText')
                 const $title3 = $('<a>').text(minedData.name)
-                $title3.attr('href',minedData.website_url).attr('id','linkText')
+                $title3.attr('href',minedData.website_url).attr('id','linkText').attr("target","_blank")
                 const $title4 = $('<h3>').text('Phone: ' + minedData.phone)
                 $(`#${minedData.id}`).append($title2);
                 $(`#${minedData.id}`).append($title3);
