@@ -30,6 +30,21 @@ iframe {
 
 }
 
+#linkText {
+    color:darkgoldenrod;
+}
+#datX {
+    float: left;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+}
+
+#individualBreweryText {
+    text-align:center;
+}
+
 
 
 .container {
@@ -51,6 +66,11 @@ iframe {
     display:flex;
 } 
 
+.listBackgrounds {
+    background-color: rgba(59, 52, 17, 0.7);
+    border-radius: 10px;
+}
+
 .brewTourHeader h1 {
     /* color:darkgoldenrod; */
     border-color: white;
@@ -66,8 +86,9 @@ iframe {
     width:50%;
     height: 500px;
     flex-wrap: wrap;
-    background:rgba(255,255,255,0.7);
     overflow: scroll;
+    background: rgba(58, 46, 8, 0.767) url("/Users/peterfuoco/Downloads/Bubbles.gif") right top;
+    border-radius: 10px;
 }
 
 body {
@@ -89,25 +110,31 @@ body {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
+  padding-left: 100px;
+  padding-right: 100px;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
   font-family: 'Literata', serif;
   color:darkgoldenrod;
   border-color: white;
+  text-align: center;
+  margin: 0 auto;
 
 }
 
 .button2 {
-    padding: 10px;
+    /* padding: 10px; */
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    margin:10px
+    margin:10px;
     /* border-radius: 10px; */
+    /* // background color */
+    cursor: pointer;
 }
 
 
@@ -116,14 +143,21 @@ body {
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    margin:10px
+    margin:10px;
+    cursor: pointer;
+    
 }
 
 
 
-/* input {
+input {
     width: 200px;
-    height: 50px;
-} */
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
 
 /* add @media min pixels */

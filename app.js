@@ -5,11 +5,12 @@ $(() => {
         for (let i=0; i <data.length; i++) {
             console.log('got ', data[i], i)
             const $title = $('<ul>').text(
-            data[i].name); 
+            data[i].name).addClass('listBackgrounds'); 
+            $('.breweryResults').css('display','block');
             $('.breweryResults').append($title);
             const $button = $('<button>').val(data[i].name)
-            $title.append($button)
-            $button.text('Description')
+            $title.prepend($button)
+            $button.text('Details')
             $button.addClass('boozyInfo')
             const $websiteLink = $('<href>').val(data[i].website_url)
             $title.append($websiteLink)
@@ -18,6 +19,7 @@ $(() => {
     $('.button2').on('click', event => {
         const userInput= $(event.target).text();
          $('.breweryResults').empty()
+         $('.breweryResults').css('display','none');
         const textValue = $('.text_value2').val()     
             const endpoint = `https://api.openbrewerydb.org/breweries?by_city=${textValue}`   // search by brewery name
         $.ajax({
@@ -32,12 +34,15 @@ $(() => {
             console.log( $(`#${minedData.id}`).length )
             if ( $(`#${minedData.id}`).length === 0 ) {
                 const $displayModal = $('<div>').attr('id', `${minedData.id}`);
+                const $xButton = $('<p>').text('X').attr('id','datX')
+                $displayModal.append($xButton)
                 $displayModal.addClass('modal')
                 $('.breweryResults').prepend($displayModal)
                 const $title2 = $('<h1>').text(
                 minedData.name + ' is a '+ minedData.brewery_type + ' brewery in ' + minedData.city + ', ' + minedData.state + 
-                '.')
-                const $title3 = $('<h2>').text('Website: ' + minedData.website_url)
+                '.').attr('id','individualBreweryText')
+                const $title3 = $('<a>').text(minedData.name)
+                $title3.attr('href',minedData.website_url).attr('id','linkText')
                 const $title4 = $('<h3>').text('Phone: ' + minedData.phone)
                 $(`#${minedData.id}`).append($title2);
                 $(`#${minedData.id}`).append($title3);
@@ -46,7 +51,7 @@ $(() => {
                 $gMapsFrame.attr('src', `https://www.google.com/maps/embed/v1/place?q=${minedData.street}${minedData.city}${minedData.state}${minedData.postal_code}&key=AIzaSyCPFw1yWIAYr0WspFZHGTa11KDdmgCRBX4`)
                 $(`#${minedData.id}`).append($gMapsFrame)
                 
-                $(`#${minedData.id}`).on('click', (event) => {
+                $(`#datX`).on('click', (event) => {//X id
                     event.preventDefault();
                     $(`#${minedData.id}`).css('display','none')
                 })    
