@@ -79,7 +79,7 @@ iframe {
     height: 500px;
     flex-wrap: wrap;
     overflow: scroll;
-    background: rgba(58, 46, 8, 0.767) url("Bubbles.gif") right top; 
+    background: rgba(58, 46, 8, 0.767) url("/Users/peterfuoco/peterfuoco.github.io/Bubbles.gif") right top; 
     /* "/Users/peterfuoco/Downloads/Bubbles.gif" */
     border-radius: 10px;
 }
