@@ -76,7 +76,7 @@ iframe {
 
 .breweryResults {
     width:50%;
-    height: 100%;
+    height: 500px;
     flex-wrap: wrap;
     overflow: scroll;
     background: rgba(58, 46, 8, 0.767) url("/Users/peterfuoco/Downloads/Bubbles.gif") right top;
@@ -89,14 +89,6 @@ body {
 
 }
 
-/* .brewTour {
-    float: center;
-    width: 100%;
-    text-align:center;
-    padding-top: 20px;
-
-} */
-
 .modal {
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -106,8 +98,8 @@ body {
   padding-right: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 90%; /* Full width */
+  height: 90%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
@@ -147,9 +139,7 @@ input {
     border-radius: 10px;
 }
 
-/* add @media min pixels */
-
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     body {
         display: flex;
         flex-direction: column;
@@ -157,23 +147,97 @@ input {
         width: 100%;
         height: 100vh;
     }
-    .heading {
+    .heading h1 {
         width: 100%;
         height: 40vh;
         border: 1px solid red;
+        font-size: 60px;
+        
     }
     .brewTourHeader {
         width: 100%;
         height: 10vh;
         border: 1px solid blue;
+        font-size: 10px;
     }
     .container {
         width: 100%;
         height: 100vh;
         border: 1px solid green;
+        flex-direction: column;
     }
 
+    .breweryResults {
+        width:90%;
+        height: 50%;
+        flex-wrap: wrap;
+        overflow: scroll;
+        background: rgba(58, 46, 8, 0.767) url("/Users/peterfuoco/Downloads/Bubbles.gif") right top;
+        border-radius: 10px;
+        padding-left: 10px;
+        position: relative;
+        left: 40px;
+    
+    }
+
+    .modal {
+        display: block; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 50px; /* Location of the box */
+        padding-left: 50;
+        padding-right: 50px;
+        left: 0;
+        top: 0;
+        width: 70%; /* Full width */
+        height: 60%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+        font-family: 'Literata', serif;
+        color:darkgoldenrod;
+        border-color: white;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 10px;
+      
+      }
+
+
+      .button2 {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px;
+        cursor: pointer;
+        height: 20px;
+
+    }
+
+    .brewTour {
+        height:30%;
+        width: 48%;
+        display:flex;
+        padding-left: 10%;
+    } 
+    
+    ul {
+        height: 50px;
+    }
+
+    #datX {
+        float: left;
+        height: 20px;
+        cursor: pointer;
+        position: relative;
+        left: 2px;
+    }
+
+    iframe {
+        width: 70%;
+        height: 50%;
+        border: 5px;
+        border-style: border 0;
+        float: center;
+     }
+
 }
-
-
-/* @media (max-width: 1040) { */
