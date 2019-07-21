@@ -85,7 +85,7 @@ iframe {
 }
 
 body {
-    background: #ffffff url("Beer.jpg") right top;
+    background: #ffffff url('Beer.jpg') right top;
     /* https://github.com/peterfuoco/peterfuoco.github.io/blob/master/Beer.jpg) */
     /* "/Users/peterfuoco/Downloads/Beer.jpg" */
     font-family: 'Literata', serif;
